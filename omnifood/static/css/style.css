@@ -656,3 +656,15 @@ footer p {
 .js--wp-1.animated {
     opacity: 1;
 }
+
+/* Message */ 
+ul.messages li.success {
+    color: #008000;
+    list-style-type: none;
+  }
+  
+  ul.messages li.danger {
+    color: #ff0000;
+    list-style-type: none;
+  }
+  

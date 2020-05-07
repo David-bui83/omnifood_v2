@@ -266,7 +266,15 @@
       <h2>We're happy to hear from you</h2>
   </div>
   <div class="row">
-      <form method="post" action="#" class="contact-form">
+      <form method="post" action="{% url 'message' %}" class="contact-form">
+          {% csrf_token %}
+          <div class="row">
+              <div class="col span-1-of-3">
+            </div>
+            <div class="col span-2-0f-3">
+                {% include 'partials/_alerts.html' %}
+              </div>
+          </div>
           <div class="row">
               <div class="col span-1-of-3">
                   <label for="name">Name</label>    
